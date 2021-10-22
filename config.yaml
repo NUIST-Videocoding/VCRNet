@@ -1,0 +1,88 @@
+###################### Base Settings######################
+enableTensorboard: True #
+test_during_training: False #
+
+### database ###
+TID2013:
+  datainfo: ./data/TID2013fullinfo.mat
+  im_dir: ./data/tid2013/distorted_images/ # /datasets/qa/tid2013/distorted_images/ #
+  im_ref: ./data/tid2013/reference_images/
+TID2013blur:
+  datainfo: ./data/TID2013info.mat
+  im_dir: ./data/tid2013/distorted_images/ # /datasets/qa/tid2008/distorted_images/ #
+  im_ref: ./data/tid2013/reference_images/
+TID2013jp2k:
+  datainfo: ./data/TID2013infojp2k.mat
+  im_dir: ./data/tid2013/distorted_images/ # /datasets/qa/tid2008/distorted_images/ #
+  im_ref: ./data/tid2013/reference_images/
+TID2013jpeg:
+  datainfo: ./data/TID2013infojpeg.mat
+  im_dir: ./data/tid2013/distorted_images/ # /datasets/qa/tid2008/distorted_images/ #
+  im_ref: ./data/tid2013/reference_images/
+TID2013wn:
+  datainfo: ./data/TID2013infown.mat
+  im_dir: ./data/tid2013/distorted_images/ # /datasets/qa/tid2008/distorted_images/ #
+  im_ref: ./data/tid2013/reference_images/
+
+LIVE:
+  datainfo: ./data/LIVEfullinfo.mat
+  im_dir: ./data/databaserelease2/
+  im_ref: ./data/databaserelease2/refimgs/
+LIVEjpeg:
+  datainfo: ./data/LIVEjpeginfo.mat
+  im_dir: ./data/databaserelease2/
+  im_ref: ./data/databaserelease2/refimgs/
+LIVEwn:
+  datainfo: ./data/LIVEwninfo.mat
+  im_dir: ./data/databaserelease2/
+  im_ref: ./data/databaserelease2/refimgs/
+LIVEblur:
+  datainfo: ./data/LIVEblurinfo.mat
+  im_dir: ./data/databaserelease2/
+  im_ref: ./data/databaserelease2/refimgs/
+LIVEff:
+  datainfo: ./data/LIVEffinfo.mat
+  im_dir: ./data/databaserelease2/
+  im_ref: ./data/databaserelease2/refimgs/
+
+
+CSIQ:
+  datainfo: ./data/CSIQfullinfo.mat
+  im_dir: ./data/CSIQ/dst_imgs/
+  im_ref: ./data/CSIQ/src_imgs/
+CSIQjp2k:
+  datainfo: ./data/CSIQfullinfojp2k.mat
+  im_dir: ./data/CSIQ/dst_imgs/
+  im_ref: ./data/CSIQ/src_imgs/
+CSIQjpeg:
+  datainfo: ./data/CSIQfullinfojpeg.mat
+  im_dir: ./data/CSIQ/dst_imgs/
+  im_ref: ./data/CSIQ/src_imgs/
+CSIQwn:
+  datainfo: ./data/CSIQfullinfown.mat
+  im_dir: ./data/CSIQ/dst_imgs/
+  im_ref: ./data/CSIQ/src_imgs/
+CSIQblur:
+  datainfo: ./data/CSIQfullinfoblur.mat
+  im_dir: ./data/CSIQ/dst_imgs/
+  im_ref: ./data/CSIQ/src_imgs/
+
+LIVECh:
+  datainfo: F:/0datasets/LIVEC/Data/AllMOS_release.mat
+  im_dir: F:/0datasets/LIVEC/Data/AllImages_release.mat
+
+SIQAD:
+  datainfo:
+  im_dir: D:/0datasets/SIQAD/DistortedImages/
+  im_ref: D:/0datasets/SIQAD/references/
+
+patch_size: 64
+stride: 64
+
+
+train_ratio: 0.8
+val_ratio: 0.2
+test_ratio: 0.0
+
+train_ratio_tid: 0.0
+test_ratio_tid: 1.0
