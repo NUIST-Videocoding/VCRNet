@@ -35,3 +35,20 @@ pip install efficientnet_pytorch
 - argparse=1.4.1
 - h5py=2.10.0
 - efficientnet_pytorch=0.7.1
+
+## Citation
+
+If you find our paper or code useful for your research, please cite:
+
+```BibTex
+@ARTICLE{9694502,
+  author={Pan, Zhaoqing and Yuan, Feng and Lei, Jianjun and Fang, Yuming and Shao, Xiao and Kwong, Sam},
+  journal={IEEE Transactions on Image Processing}, 
+  title={VCRNet: Visual Compensation Restoration Network for No-Reference Image Quality Assessment}, 
+  year={2022},
+  volume={31},
+  number={},
+  pages={1613-1627},
+  doi={10.1109/TIP.2022.3144892}}
+```
+
