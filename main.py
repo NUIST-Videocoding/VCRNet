@@ -40,9 +40,9 @@ def main(config):
             test_index = sel_num[int(round(0.8 * len(sel_num))):len(sel_num)]
             solver = demoIQASolver(config, folder_path[config.dataset], train_index, test_index)
             srcc_all[i], plcc_all[i] = solver.train()
-        srcc_med = np.median(srcc_all)
-        plcc_med = np.median(plcc_all)
-        print('Testing median SRCC %4.4f,\tmedian PLCC %4.4f' % (srcc_med, plcc_med))
+        srcc_med = np.mean(srcc_all)
+        plcc_med = np.mean(plcc_all)
+        print('Testing mean SRCC %4.4f,\tmedian PLCC %4.4f' % (srcc_med, plcc_med))
 
 
 if __name__ == '__main__':

@@ -80,9 +80,9 @@ patch_size: 64
 stride: 64
 
 
-train_ratio: 0.8
-val_ratio: 0.2
-test_ratio: 0.0
+train_ratio: 0.7
+val_ratio: 0.1
+test_ratio: 0.2
 
 train_ratio_tid: 0.0
 test_ratio_tid: 1.0
